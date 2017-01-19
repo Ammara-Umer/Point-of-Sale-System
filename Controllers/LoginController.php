@@ -47,9 +47,13 @@ include_once 'Models/LoginModel.php';
           }
   
      }
+     /*
+      * method logOut , destroy session and call login View
+      */
      public function logOut()
      {
          session_destroy();
+         $this->index();
      }
     
 }

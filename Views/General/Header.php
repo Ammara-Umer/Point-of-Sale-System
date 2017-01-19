@@ -29,7 +29,7 @@
                     </li>
                      <?PHP if($_SESSION['name']==null){?>
                     <li class="pull-right">
-                        <a href="/POS/LoginController/logIn">Login</a>
+                        <a href="/POS2/LoginController/index">Login</a>
                     </li>
                  <?php  ; }
                  else {;?>
@@ -42,13 +42,13 @@
                    
                     <li class="pull-right">
                          
-                        <a href="POS/LoginController/logOut">Logout</a>
+                        <a href="/POS2/LoginController/logOut">Logout</a>
                     </li>
                     
                      <?php  ; }?>
                     <li class="pull-right">
                          
-                        <a href="/POS/RegisterController/register">Sign Up</a>
+                        <a href="/POS2/RegisterController/index">Sign Up</a>
                     </li>
                 </ul>
             </div>

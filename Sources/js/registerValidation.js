@@ -45,7 +45,7 @@
  $("#email").blur(function(event){
      event.preventDefault();
      $.ajax({
-         url:'/POS1/LoginController/EmailValidation',
+         url:'/POS2/RegisterController/emailValidation',
          type:"POST",
          data:{
              email:$("#email").val()
@@ -60,7 +60,7 @@
          }
      })
  })
- $("#regForm").submit(function(event){
+ $("#Form").submit(function(event){
              // alert($('#type').val());
     event.preventDefault();
     if( $("#regForm").valid() ) {
