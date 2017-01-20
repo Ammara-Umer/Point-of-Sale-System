@@ -25,7 +25,7 @@
                         <a href="#">About</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="/POS2/AdminController/index">Services</a>
                     </li>
                      <?PHP if($_SESSION['name']==null){?>
                     <li class="pull-right">
@@ -48,7 +48,7 @@
                      <?php  ; }?>
                     <li class="pull-right">
                          
-                        <a href="/POS2/RegisterController/index">Sign Up</a>
+                        <a href="/POS2/AdminsController/index">Sign Up</a>
                     </li>
                 </ul>
             </div>

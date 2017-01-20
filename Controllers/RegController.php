@@ -4,14 +4,19 @@ include_once 'Models/RegisterModel.php';
 /*
  * class regisetController for regsitration of user
  */
-class RegisterController implements IController{
+class RegController implements IController{
     /*
      * method index load when ever the controller loaded and show a default view of Register
      * @return void
      */
-     public function index(){
+    public function __construct() {
+        
+    }
+
+    public function index(){
+         
          require_once 'Views/General/Header.php';
-        require_once 'Views/RegisterView.php';
+        require_once 'Views/LoginView.php';
          
      }
     /*
