@@ -45,13 +45,13 @@
  $("#email").blur(function(event){
      event.preventDefault();
      $.ajax({
-         url:'/POS2/RegisterController/emailValidation',
+         url:'/POS2/RegController/emailValidation',
          type:"POST",
          data:{
              email:$("#email").val()
          },
          success:function(data){
-             if(data=="OK"){
+             if(data.indexOf("OK")>-1){
                  $("#user-exist").html("<p> email available </p>");
              }
              else{
@@ -66,7 +66,7 @@
     if( $("#regForm").valid() ) {
             $.ajax({
 
-            url:'/POS1/LoginController/SignUp',
+            url:'/POS1/RegController/register',
             type: "POST",
             data: 
             {

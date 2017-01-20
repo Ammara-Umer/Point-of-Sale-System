@@ -3,6 +3,7 @@ include_once 'Interfaces/IController.php';
 include_once 'Controllers/LoginController.php';
 include_once 'Controllers/AdminController.php';
 include_once 'Controllers/UserController.php';
+include_once 'Controllers/RegController.php';
 include_once 'Controllers/NotFoundController.php';
 /*
  *class factory class to call controller and method 

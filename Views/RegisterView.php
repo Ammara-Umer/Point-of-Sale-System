@@ -31,7 +31,7 @@
     <body >
     <div class="container">
     <div class="main">
-        <form name="regForm" id="regForm" class="form" method="POST" action="/POS2/RegisterController/register"  >
+        <form name="regForm" id="regForm" class="form" method="POST" action="/POS2/RegController/register"  >
        <div class="form-group">
       <label for="name">Name:</label>
       <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name" required="true">

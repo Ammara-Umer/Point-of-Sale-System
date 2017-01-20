@@ -25,12 +25,13 @@ class RegisterModel{
           }
     }
     public function register($obj){
+        
         $email=$obj['email'];
         $name=$obj['name'];
         $password=$obj['password'];
         $address= $obj['address'];
         $type=$obj['type'];
-        if($this->EmailValidation($email)==true)
+       if($this->EmailValidation($email)==true)
         {
             $sql="INSERT INTO admin (name, email, password, address,type) VALUES ('$name','$email','$password','$address','$type')";
              $result = mysqli_query($this->conn, $sql);
@@ -50,8 +51,7 @@ class RegisterModel{
              
             return false;
         }
-        
-    }
-        
+      
     
+}
 }

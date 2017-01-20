@@ -1,5 +1,5 @@
 <?php
-include_once 'Interfaces/IController.php';
+include_once 'index.php';
 include_once 'Models/RegisterModel.php';
 /*
  * class regisetController for regsitration of user
@@ -16,7 +16,7 @@ class RegController implements IController{
     public function index(){
          
          require_once 'Views/General/Header.php';
-        require_once 'Views/LoginView.php';
+        require_once 'Views/RegisterView.php';
          
      }
     /*
@@ -32,7 +32,7 @@ class RegController implements IController{
           }
          else
          {
-             echo "success";
+             echo "OK";
          }
     
     }
@@ -42,14 +42,15 @@ class RegController implements IController{
     * @method loadControllerByName of ControllerFactory to laod LoginController if added successfully
     */
     public function register(){
-       ;
+       $type=$_POST['type'];
         $data=array(
-                'name'=>$POST['name'],
-                'email'=>$POST['email'],
+                'name'=>$_POST['name'],
+                'email'=>$_POST['email'],
                 'password'=>$_POST['password'],
-                'type'=>$_PSOT['type']
+                'type'=>$type,
+                'address'=>$_POST['address']
         );
-        $obj=new RegisetrModel();
+        $obj=new RegisterModel();
         if($obj->register($data)==true)
         {
             ControllerFactory::loadControllerByName("LoginController");

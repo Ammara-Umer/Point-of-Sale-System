@@ -48,7 +48,7 @@
                      <?php  ; }?>
                     <li class="pull-right">
                          
-                        <a href="/POS2/AdminsController/index">Sign Up</a>
+                        <a href="/POS2/RegController/index">Sign Up</a>
                     </li>
                 </ul>
             </div>
