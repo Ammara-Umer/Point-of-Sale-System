@@ -49,6 +49,7 @@ include_once 'Models/LoginModel.php';
      }
      /*
       * method logOut , destroy session and call login View
+      * @return void
       */
      public function logOut()
      {

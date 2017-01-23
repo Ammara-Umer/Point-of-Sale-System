@@ -4,6 +4,8 @@ include_once 'Controllers/LoginController.php';
 include_once 'Controllers/AdminController.php';
 include_once 'Controllers/UserController.php';
 include_once 'Controllers/RegController.php';
+include_once 'Controllers/CatagoryController.php';
+
 include_once 'Controllers/NotFoundController.php';
 /*
  *class factory class to call controller and method 
@@ -21,7 +23,7 @@ class ControllerFactory{
      * @parms IController $contName  specify controller name 
      * @parms String $method specify method name 
      * @parms String $parms  specify list of parameters  
-     * @return nothing to return , 
+     * @return void
      *  
      */
     public function getController(IController $contName, $method="", $parms=""){
@@ -48,7 +50,7 @@ class ControllerFactory{
      * @parms String $contName  specify controller name 
      * @parms String $method specify method name 
      * @parms String $parms  specify list of parameters  
-     * @return nothing to return , 
+     * @return void , 
      *  
      */
    public function loadControllerByName($contName, $method="", $parms=""){
