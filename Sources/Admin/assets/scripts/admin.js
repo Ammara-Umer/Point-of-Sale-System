@@ -11,6 +11,6 @@
      });
      $("#ms").click(function(){
      $("#content").load('/POS2/Views/Admin/ProductCatagoryManagment.php');
-     });
+     }); 
  
  });
